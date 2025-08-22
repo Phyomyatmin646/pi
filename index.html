@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!--Header Section -->
+
+    
+    <section class="head">
+        <header class="navbar">
+        <div class="logo">
+             <!-- <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> --> 
+                <img src="assests/viber_image_2025-08-20_19-11-44-493.jpg" alt="">
+            </svg>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">EXPLORE</a></li>
+                <li><a href="#">DEPARTMENT</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--middle Section -->
+    <section class="hero-section">
+        <div class="content-left">
+            <h1 class="hello">Empowering</h1><h1>Myanmar's<br>Youth Community</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo excepturi quibusdam sit maiores quis vitae, quia consequuntur, earum inventore id, animi adipisci omnis.</p>
+            <button class="join-button">Join With Us</button>
+        </div>
+        <div class="image-right">
+            <div class="middle">
+            </div>
+        </div>
+    </section>
+</section>
+
+    <!-- Cards Section -->
+     <h1 class="world">Our Value</h1>
+    <section class="container">
+        <div class="card">
+            <div class="icon">
+                <img src="assests/leadership-development.png" alt="Youth Leadership Icon">
+            </div>
+            <h3>Youth Centered Leadership</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo excepturi quibusdam sit maiores quis vitae, quia consequuntur, earum inventore id, animi adipisci omnis.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="assests/protest.png" alt="Empowerment Icon">
+            </div>
+            <h3>Empowerment</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo excepturi quibusdam sit maiores quis vitae, quia consequuntur, earum inventore id, animi adipisci omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim suscipit iste quisquam voluptatum ab modi nesciunt, dolore veritatis voluptatem quae, a in. Ex itaque enim consequatur quaerat neque numquam praesentium?</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="assests/partners.png" alt="Collaboration Icon">
+            </div>
+            <h3>Collaboration</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo excepturi quibusdam sit maiores quis vitae, quia consequuntur, earum inventore id, animi adipisci omnis.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+                <img src="assests/target.png" alt="Impactful Icon">
+            </div>
+            <h3>Impactful</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo excepturi quibusdam sit maiores quis vitae, quia consequuntur, earum inventore id, animi adipisci omnis.</p>
+        </div>
+    </section>
+    <script>
+let lastScrollY = window.scrollY;
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY) {
+        navbar.classList.add('hidden');
+    } else {
+        navbar.classList.remove('hidden');
+    }
+    lastScrollY = window.scrollY;
+});
+</script>
+
+
+</body>
+</html>
